@@ -15,6 +15,7 @@ Seasonality: Peak sales occur in November–December, indicating strong holiday-
 High-value customers: Top 5% of customers contribute to over 50% of total revenue.
 
 ## Project Structure
+```
 project_online_retail/
 │
 ├── data/
@@ -37,6 +38,7 @@ project_online_retail/
 │ ├── top20byRevenue.png
 │
 ├── README.md # This file
+```
 
 ## Data Description
 
