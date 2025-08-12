@@ -102,9 +102,3 @@ python scripts/rfm_analysis.py
 - Modify the scripts if necessary to connect to your PostgreSQL instance.  
 - Explore the provided SQL queries for additional insights.  
 - Visualize customer segments and behaviors to support marketing and business decisions.  
-
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request.  
-
-## License
-Specify your license here (e.g., MIT, GPL, etc.).  
