@@ -7,6 +7,13 @@ The project aims to identify top-selling products, customer purchasing patterns,
 I apply RFM (Recency, Frequency, Monetary) analysis to segment customers and gain insights for marketing strategies.  
 The project includes data cleaning, loading data into PostgreSQL, running SQL queries for analysis, and visualizing results.
 
+## Key Insights
+
+Top-selling products: Certain gift items and decorative products consistently generate the highest revenue.
+Customer segmentation: RFM analysis identified a small but highly valuable group of loyal customers.
+Seasonality: Peak sales occur in November–December, indicating strong holiday-related purchasing patterns.
+High-value customers: Top 5% of customers contribute to over 50% of total revenue.
+
 ## Project Structure
 project_online_retail/
 │
