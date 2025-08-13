@@ -72,8 +72,7 @@ print(rfm_df.head())
 
 # Assign scores (1-4) to R, F, M based on quartiles — higher is better
 # For Recency, smaller values are better, so labels reversed implicitly by ordering
-rfm_df['F_score'] = pd.qcut(rfm_df['Frequency'], 4, duplicates='drop')
-rfm_df['F_score'] = rfm_df['F_score'].cat.codes + 1
+rfm_df['F_score'] = pd.qcut(rfm_df['Frequency'], 4, duplicates='drop').cat.codes + 1
 rfm_df['R_score'] = pd.qcut(rfm_df['Recency'], 4, duplicates='drop').cat.codes + 1
 rfm_df['M_score'] = pd.qcut(rfm_df['Monetary'], 4, duplicates='drop').cat.codes + 1
 
