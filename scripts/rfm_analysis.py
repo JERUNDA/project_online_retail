@@ -5,7 +5,7 @@ import seaborn as sns
 import numpy as np
 
 # Load the dataset
-df = pd.read_csv(r"C:\temp\online_retail_clean.csv")
+df = pd.read_csv(r"C:\online_retail_clean.csv")
 
 # Show basic info about the dataframe (number of rows, columns, types)
 df.info()
