@@ -5,7 +5,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # Define the path to the Excel file
-file_path = r"C:\temp\Online_Retail.xlsx"
+file_path = r"Online_Retail.xlsx"
 
 # Read Excel file into a pandas DataFrame
 df = pd.read_excel(file_path)
@@ -48,4 +48,4 @@ clean_df = pd.read_sql(""" select * from online_retail
 ... and "CustomerID" is not null;""", engine)
 
 # Save the cleaned DataFrame to a CSV file with semicolon separator and without the index column
-clean_df.to_csv(r'C:\temp\online_retail_clean.csv', index = False, sep = ';')
+clean_df.to_csv(r'C:online_retail_clean.csv', index = False, sep = ';')
