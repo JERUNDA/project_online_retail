@@ -87,8 +87,8 @@ where Quantity < 0;
 -- monthly sales vs returns, and % of returns from total transactions
 with monthly_stats as (
 select date_trunc('month', InvoiceDate) as month,  -- truncate date to month
-count(*) filter (where Quantity >= 0) as sales_count,    -- count transactions with positive quantity (sales)
-count(*) filter (where Quantity < 0) as returns_count    -- count transactions with negative quantity (returns)
+count(*) FILTER (where InvoiceNo not like 'C%') as sales_count,    -- number of sales transactions
+count (*) filter (where InvoiceNo like 'C%') as returns_count    -- number of return transactions
 from online_retail_clean
 group by month
 )
